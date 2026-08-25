@@ -118,7 +118,7 @@ const productos = [
         nombre: "Afnan 9pm 100 ml",
         notas: "Canela, Flor de azahar, Lavanda",
         precio: "$35.000",
-        genero: "unisex",
+        genero: "hombre",
         imagen: "imagenes/9pm.png"
     },
 
