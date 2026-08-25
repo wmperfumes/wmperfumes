@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff7fb;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Banner principal */
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-logo {
+
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+
+}
+
+.hero h1 {
+    color: #d86a9d;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #555;
+    font-size: 22px;
+}
+
+/* Menú */
+
+nav {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d86a9d;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #b94f84;
+}
+
+/* Buscador */
+
+#buscador {
+    width: 80%;
+    max-width: 400px;
+    padding: 14px;
+    border-radius: 15px;
+    border: 1px solid #ffc7dc;
+    font-size: 16px;
+}
+
+/* Catálogo */
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* Tarjetas */
+
+.producto {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.producto h2 {
+    font-size: 22px;
+    margin: 15px 0 10px;
+}
+
+.notas {
+    color: #666;
+    font-style: italic;
+}
+
+.precio {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d86a9d;
+}
+
+/* Botón */
+
+.producto a {
+    display: inline-block;
+    margin-top: 15px;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.producto a:hover {
+    background: #1ebc57;
+}
+
+/* Pie de página */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    margin-top: 40px;
+}
+.producto {
+    position: relative;
+}
+
+.producto {
+    position: relative;
+}
+
+.genero {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.genero.mujer {
+    background: #ffe6f0;
+}
+
+.genero.hombre {
+    background: #b7d9ff;
+}
+
+.genero.unisex {
+    background: white;
+}
+/* Precio normal cuando hay oferta */
+
+.precio-normal {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through;
+    margin: 10px 0 0;
+}
+
+/* Precio en oferta */
+
+.precio-oferta {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e63946;
+    margin: 5px 0;
+}
+
+/* Precio normal sin oferta */
+
+.precio {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d86a9d;
+}
