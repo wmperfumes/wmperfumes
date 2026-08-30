@@ -27,6 +27,26 @@ const productos = [
         agotado: false
     },
 
+     {
+        nombre: "Hayaati Belle 50 ml",
+        notas: "Dulce, Afrutado",
+        precio: "$10.000",
+        genero: "mujer",
+        imagen: "imagenes/belle.png",
+        agotado: false
+    },
+
+     {
+        nombre: "Urban Men Amaze 50 ml",
+        notas: "Amaderado, Coco",
+        precio: "$10.000",
+        genero: "hombre",
+        imagen: "imagenes/urban.png",
+        agotado: false
+    },
+
+
+
     /* SPRAY PRINCIPAL QUE SE VE EN EL CATÁLOGO */
     {
         nombre: "Perfume Formato Spray 200 ml",
