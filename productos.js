@@ -30,7 +30,7 @@ const productos = [
     /* SPRAY PRINCIPAL QUE SE VE EN EL CATÁLOGO */
     {
         nombre: "Perfume Formato Spray 200 ml",
-        notas: "Amaderados, Cítricos",
+        notas: "Diversos aromas",
         precio: "$10.000",
         genero: "unisex",
         imagen: "imagenes/spray.png",
