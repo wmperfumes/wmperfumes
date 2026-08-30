@@ -1,12 +1,26 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff7fb;
+/* =========================
+   FUENTES Y ESTILOS GENERALES
+========================= */
+
+* {
+    box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
-/* Banner principal */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #fff7fb;
+    color: #1c1c1c;
+}
+
+
+/* =========================
+   BANNER PRINCIPAL
+========================= */
 
 .hero {
     text-align: center;
@@ -14,38 +28,45 @@ html {
 }
 
 .hero-logo {
-
     width: 280px;
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-
 }
 
 .hero h1 {
     color: #d86a9d;
-    font-size: 50px;
-    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
 }
 
 .hero p {
     color: #555;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
 }
 
-/* Menú */
+
+/* =========================
+   MENÚ
+========================= */
 
 nav {
-    background: white;
-    padding: 15px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    padding: 18px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
 
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 45px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -53,119 +74,202 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #d86a9d;
-    font-size: 18px;
-    font-weight: bold;
+    color: #b94f84;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #b94f84;
+    color: #8f365f;
 }
 
-/* Buscador */
+
+/* =========================
+   BUSCADOR
+========================= */
 
 #buscador {
     width: 80%;
-    max-width: 400px;
-    padding: 14px;
-    border-radius: 15px;
-    border: 1px solid #ffc7dc;
-    font-size: 16px;
+    max-width: 450px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 1px solid #f0bfd3;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
 }
 
-/* Catálogo */
+#buscador:focus {
+    border-color: #d86a9d;
+    box-shadow: 0 0 0 3px rgba(216, 106, 157, 0.1);
+}
+
+
+/* =========================
+   CATÁLOGO
+========================= */
 
 .catalogo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
-    padding: 30px;
+    padding: 35px;
 }
 
-/* Tarjetas */
+
+/* =========================
+   TARJETAS DE PRODUCTOS
+========================= */
 
 .producto {
-    background: white;
-    border-radius: 20px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 18px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .producto:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
 }
 
 .producto img {
     width: 220px;
     height: 220px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 12px;
 }
+
+
+/* Nombre del perfume */
 
 .producto h2 {
-    font-size: 22px;
-    margin: 15px 0 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin: 18px 0 8px;
+    line-height: 1.1;
 }
 
+
+/* Notas del perfume */
+
 .notas {
-    color: #666;
+    color: #777;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
     font-style: italic;
+    margin: 8px 0;
+}
+
+
+/* =========================
+   PRECIOS
+========================= */
+
+.precio-normal {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin: 12px 0 0;
+}
+
+.precio-oferta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #c1121f;
+    margin: 5px 0;
 }
 
 .precio {
-    font-size: 28px;
-    font-weight: bold;
-    color: #d86a9d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #c94f82;
+    margin: 18px 0;
 }
 
-/* Botón */
+
+/* =========================
+   BOTÓN VER SPRAYS
+========================= */
+
+.ver-sprays-producto {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    background: #d86a9d;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ver-sprays-producto:hover {
+    background: #b94f84;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   BOTÓN WHATSAPP
+========================= */
 
 .producto a {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 10px;
     background: #25d366;
     color: white;
     text-decoration: none;
-    padding: 12px 18px;
-    border-radius: 12px;
-    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
 }
 
 .producto a:hover {
     background: #1ebc57;
+    transform: translateY(-2px);
 }
 
-/* Pie de página */
 
-footer {
-    text-align: center;
-    padding: 30px;
-    background: white;
-    margin-top: 40px;
-}
-.producto {
-    position: relative;
-}
-
-.producto {
-    position: relative;
-}
+/* =========================
+   ICONO DE GÉNERO
+========================= */
 
 .genero {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
+    top: 12px;
+    right: 12px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    font-size: 21px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    z-index: 2;
 }
 
 .genero.mujer {
@@ -173,34 +277,227 @@ footer {
 }
 
 .genero.hombre {
-    background: #b7d9ff;
+    background: #e3efff;
 }
 
 .genero.unisex {
+    background: #ffffff;
+}
+
+
+/* =========================
+   PRODUCTOS AGOTADOS
+========================= */
+
+.producto-agotado {
+    opacity: 0.75;
+}
+
+.agotado {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #1c1c1c;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+
+.boton-agotado {
+    margin-top: 18px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #cccccc;
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   CATÁLOGO DE SPRAYS
+========================= */
+
+.catalogo-sprays {
+    padding-top: 0;
+    padding-bottom: 35px;
+}
+
+.oculto {
+    display: none;
+}
+
+
+/* =========================
+   BOTÓN VOLVER AL CATÁLOGO
+========================= */
+
+.volver-catalogo {
+    width: 100%;
+    text-align: center;
+    padding: 35px 20px 50px;
+}
+
+.volver-catalogo a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: #b94f84;
+    text-decoration: none;
+    padding: 15px 30px;
+    border: 1px solid #d86a9d;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 18px rgba(216, 106, 157, 0.18);
+    transition: background 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.volver-catalogo a:hover {
+    background: #d86a9d;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(216, 106, 157, 0.35);
+}
+
+
+/* =========================
+   SECCIÓN ENCARGOS
+========================= */
+
+.encargo {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 45px 30px;
+    text-align: center;
     background: white;
-}
-/* Precio normal cuando hay oferta */
-
-.precio-normal {
-    font-size: 16px;
-    color: #888;
-    text-decoration: line-through;
-    margin: 10px 0 0;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
 }
 
-/* Precio en oferta */
+.encargo h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin: 0 0 12px;
+}
 
-.precio-oferta {
+.encargo p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.encargo a {
+    display: inline-block;
+    background: #d86a9d;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.encargo a:hover {
+    background: #b94f84;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #ffffff;
+    margin-top: 40px;
+    color: #777;
+    font-size: 13px;
+}
+
+footer h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #1c1c1c;
     font-size: 30px;
-    font-weight: bold;
-    color: #e63946;
-    margin: 5px 0;
 }
 
-/* Precio normal sin oferta */
 
-.precio {
-    font-size: 28px;
-    font-weight: bold;
-    color: #d86a9d;
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 35px 15px;
+    }
+
+    .hero-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .catalogo {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .producto img {
+        width: 100%;
+        max-width: 220px;
+        height: 220px;
+    }
+
+    .encargo h2 {
+        font-size: 32px;
+    }
+
+    .encargo {
+        margin: 30px 20px;
+        padding: 35px 20px;
+    }
+
+    .volver-catalogo {
+        padding: 25px 15px 40px;
+    }
+
+    .volver-catalogo a {
+        font-size: 13px;
+        padding: 14px 24px;
+    }
+
 }
