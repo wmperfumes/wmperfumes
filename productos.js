@@ -37,7 +37,7 @@ const productos = [
     },
 
      {
-        nombre: "Urban Men Amaze 50 ml",
+        nombre: "Urban Man Amaze 50 ml",
         notas: "Amaderado, Coco",
         precio: "$10.000",
         genero: "hombre",
