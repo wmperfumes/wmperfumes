@@ -9,23 +9,41 @@
 
     <title>WM Perfumes</title>
 
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Icono -->
     <link rel="icon" href="logo.png" type="image/png">
 
 </head>
 
+
 <body>
 
-    <!-- Banner principal -->
+    <!-- =========================
+         BANNER PRINCIPAL
+    ========================== -->
 
     <section id="inicio" class="hero">
 
-        <img src="logo.png" class="hero-logo" alt="WM Perfumes">
+        <img
+            src="logo.png"
+            class="hero-logo"
+            alt="WM Perfumes"
+        >
 
         <h1>WM Perfumes</h1>
 
-        <p>Tu esencia, tu firma </p>
+        <p>Tu esencia, tu firma</p>
 
         <input
             type="text"
@@ -35,27 +53,99 @@
 
     </section>
 
-    <!-- Menú -->
 
-<nav>
+    <!-- =========================
+         MENÚ
+    ========================== -->
 
-    <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#catalogo">Catálogo</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
+    <nav>
 
-</nav>
+        <ul>
 
-    <!-- Catálogo -->
+            <li>
+                <a href="#inicio">Inicio</a>
+            </li>
+
+            <li>
+                <a href="#catalogo">Catálogo</a>
+            </li>
+
+            <li>
+                <a href="#encargo">Encarga el tuyo</a>
+            </li>
+
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- =========================
+         CATÁLOGO PRINCIPAL
+    ========================== -->
 
     <section id="catalogo" class="catalogo">
 
-        <!-- Los productos se agregan automáticamente desde productos.js -->
+        <!--
+            Aquí aparecen los perfumes normales
+            y la tarjeta principal de Spray.
+
+            Se agregan automáticamente
+            desde productos.js y script.js
+        -->
 
     </section>
 
-    <!-- Contacto -->
+
+    <!-- =========================
+         CATÁLOGO DE SPRAYS OCULTO
+    ========================== -->
+
+    <section
+        id="catalogoSprays"
+        class="catalogo catalogo-sprays oculto"
+    >
+
+        <!--
+            Aquí aparecerán los sprays individuales
+            cuando se presione el botón "Ver Sprays".
+        -->
+
+    </section>
+
+
+    <!-- =========================
+         ENCARGOS ESPECIALES
+    ========================== -->
+
+    <section id="encargo" class="encargo">
+
+        <h2>
+            ¿Te gusta algún perfume y no está
+            en nuestro catálogo?
+        </h2>
+
+        <p>
+            ¡Pregúntanos por él! Haremos lo posible
+            por conseguirlo para ti.
+        </p>
+
+        <a
+            href="https://wa.me/56999293833?text=Hola,%20quiero%20consultar%20por%20un%20perfume%20que%20no%20est%C3%A1%20en%20el%20cat%C3%A1logo"
+            target="_blank"
+        >
+            Encargar un perfume
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO / PIE DE PÁGINA
+    ========================== -->
 
     <footer id="contacto">
 
@@ -63,11 +153,16 @@
 
         <p>WhatsApp: +56 9 9929 3833</p>
 
-        <p> Tu esencia, tu firma</p>
+        <p>Tu esencia, tu firma</p>
 
         <p>© 2026 WM Perfumes</p>
 
     </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
     <script src="productos.js"></script>
 
