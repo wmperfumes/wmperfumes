@@ -6,7 +6,7 @@ const productos = [
         precio: "$5.000",
         genero: "mujer",
         imagen: "imagenes/yararollon.png",
-        agotado: false
+        agotado: true
     },
 
     {
@@ -15,7 +15,7 @@ const productos = [
         precio: "$10.000",
         genero: "mujer",
         imagen: "imagenes/yara50.png",
-        agotado: false
+        agotado: true
     },
 
     {
@@ -24,7 +24,7 @@ const productos = [
         precio: "$10.000",
         genero: "mujer",
         imagen: "imagenes/lushcherry.png",
-        agotado: false
+        agotado: true
     },
 
      {
@@ -33,7 +33,7 @@ const productos = [
         precio: "$10.000",
         genero: "mujer",
         imagen: "imagenes/belle.png",
-        agotado: false
+        agotado: true
     },
 
      {
@@ -42,7 +42,7 @@ const productos = [
         precio: "$10.000",
         genero: "hombre",
         imagen: "imagenes/urban.png",
-        agotado: false
+        agotado: true
     },
 
 
@@ -93,7 +93,7 @@ const productos = [
         precio: "$25.000",
         genero: "mujer",
         imagen: "imagenes/ameeratrose.png",
-        agotado: false
+        agotado: true
     },
 
     {
@@ -102,7 +102,7 @@ const productos = [
         precio: "$30.000",
         genero: "mujer",
         imagen: "imagenes/fakharwoman.png",
-        agotado: false
+        agotado: true
     },
 
     {
@@ -140,7 +140,7 @@ const productos = [
         precio: "$25.000",
         genero: "hombre",
         imagen: "imagenes/hayaatigold.png",
-        agotado: false
+        agotado: true
     },
 
     {
@@ -168,7 +168,8 @@ const productos = [
         precioOferta: "$6.000",
         genero: "unisex",
         tipo: "spray",
-        imagen: "imagenes/nebras.png"
+        imagen: "imagenes/nebras.png",
+        agotado: true
     },
 
     {
@@ -178,7 +179,8 @@ const productos = [
         precioOferta: "$6.000",
         genero: "mujer",
         tipo: "spray",
-        imagen: "imagenes/taskeen.png"
+        imagen: "imagenes/taskeen.png",
+        agotado: true
     },
 
     {
@@ -188,7 +190,8 @@ const productos = [
         precioOferta: "$6.000",
         genero: "hombre",
         tipo: "spray",
-        imagen: "imagenes/universe.png"
+        imagen: "imagenes/universe.png",
+        agotado: false
     },
 
     {
@@ -198,7 +201,8 @@ const productos = [
         precioOferta: "$6.000",
         genero: "unisex",
         tipo: "spray",
-        imagen: "imagenes/amethystic.png"
+        imagen: "imagenes/amethystic.png",
+        agotado: true
     },
 
 ];
