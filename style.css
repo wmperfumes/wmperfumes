@@ -501,3 +501,26 @@ footer h2 {
     }
 
 }
+
+/* MARCA DEL PERFUME */
+.marca-perfume {
+    margin: 8px 0 2px;
+    color: #b94f84;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* FAMILIA OLFATIVA */
+.familia-olfativa {
+    margin: 8px 0;
+    color: #999999;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
