@@ -1,5 +1,5 @@
-const catalogo = document.getElementById("catalogo");
 
+const catalogo = document.getElementById("catalogo");
 
 // ========================================
 // FUNCIÓN PARA CREAR UNA TARJETA
@@ -14,15 +14,12 @@ function crearTarjeta(producto) {
             ? "♂️"
             : "⚥";
 
-
     return `
-
         <div class="producto ${producto.agotado ? "producto-agotado" : ""}">
 
-            <span class="genero ${producto.genero}">
+            <span class="genero ${producto.genero || "unisex"}">
                 ${iconoGenero}
             </span>
-
 
             ${
                 producto.agotado
@@ -30,15 +27,23 @@ function crearTarjeta(producto) {
                     : ""
             }
 
+            <img
+                src="${producto.imagen}"
+                alt="${producto.nombre}"
+                loading="lazy"
+            >
 
-            <img src="${producto.imagen}" alt="${producto.nombre}">
-
+            <p class="marca-perfume">
+                ${producto.marca || ""}
+            </p>
 
             <h2>${producto.nombre}</h2>
 
+            <p class="familia-olfativa">
+                ${producto.familia || ""}
+            </p>
 
-            <p class="notas">${producto.notas}</p>
-
+            <p class="notas">${producto.notas || ""}</p>
 
             ${
                 producto.precioOferta
@@ -58,9 +63,6 @@ function crearTarjeta(producto) {
                     `
             }
 
-
-            <!-- BOTÓN ESPECIAL PARA EL PRODUCTO PRINCIPAL DE SPRAYS -->
-
             ${
                 producto.tipo === "spray-principal"
                     ? `
@@ -74,20 +76,36 @@ function crearTarjeta(producto) {
                     : ""
             }
 
-
-            <!-- BOTÓN DE WHATSAPP O AGOTADO -->
+            ${
+                producto.tipo === "formato-35ml"
+                    ? `
+                        <a
+                            href="35ml.html"
+                            class="boton-ver-sprays"
+                        >
+                            Ver perfumes 35 ml
+                        </a>
+                    `
+                    : ""
+            }
 
             ${
                 producto.agotado
                     ? `
-                        <button class="boton-agotado" disabled>
+                        <button
+                            class="boton-agotado"
+                            disabled
+                        >
                             Producto agotado
                         </button>
                     `
                     : `
                         <a
-                            href="https://wa.me/56999293833?text=Hola,%20me%20interesa%20el%20${encodeURIComponent(producto.nombre)}"
+                            href="https://wa.me/56999293833?text=${encodeURIComponent(
+                                "Hola, me interesa el " + producto.nombre
+                            )}"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             Consultar por WhatsApp
                         </a>
@@ -95,23 +113,31 @@ function crearTarjeta(producto) {
             }
 
         </div>
-
     `;
 }
 
 
 // ========================================
 // MOSTRAR CATÁLOGO PRINCIPAL
-// NO MOSTRAR LOS SPRAYS INDIVIDUALES
+// EXCLUIR PRODUCTOS DE SECCIONES SEPARADAS
 // ========================================
 
-productos
-    .filter(producto => producto.tipo !== "spray")
-    .forEach(producto => {
+if (catalogo && typeof productos !== "undefined") {
 
-        catalogo.innerHTML += crearTarjeta(producto);
+    catalogo.innerHTML = "";
 
-    });
+    productos
+        .filter(producto =>
+            producto.tipo !== "spray" &&
+            producto.tipo !== "35ml"
+        )
+        .forEach(producto => {
+
+            catalogo.innerHTML += crearTarjeta(producto);
+
+        });
+
+}
 
 
 // ========================================
@@ -120,54 +146,58 @@ productos
 
 const buscador = document.getElementById("buscador");
 
+if (buscador && catalogo) {
 
-buscador.addEventListener("keyup", () => {
+    buscador.addEventListener("input", () => {
 
-    const texto = buscador.value.toLowerCase();
+        const texto = buscador.value
+            .toLowerCase()
+            .trim();
 
-    const tarjetas = document.querySelectorAll(".producto");
-
-
-    tarjetas.forEach(tarjeta => {
-
-        const nombre = tarjeta
-            .querySelector("h2")
-            .textContent
-            .toLowerCase();
-
-
-        tarjeta.style.display = nombre.includes(texto)
-            ? "block"
-            : "none";
-
-    });
-
-});
-
-
-// ========================================
-// RESTAURAR CATÁLOGO AL HACER CLIC EN EL MENÚ
-// ========================================
-
-const enlaces = document.querySelectorAll("nav a");
-
-
-enlaces.forEach(enlace => {
-
-    enlace.addEventListener("click", () => {
-
-        buscador.value = "";
-
-
-        const tarjetas = document.querySelectorAll(".producto");
-
+        const tarjetas = catalogo.querySelectorAll(".producto");
 
         tarjetas.forEach(tarjeta => {
 
-            tarjeta.style.display = "block";
+            const contenido = tarjeta.textContent.toLowerCase();
+
+            tarjeta.style.display = contenido.includes(texto)
+                ? ""
+                : "none";
 
         });
 
     });
 
+}
+
+
+// ========================================
+// RESTAURAR CATÁLOGO AL USAR EL MENÚ
+// ========================================
+
+const enlaces = document.querySelectorAll("nav a");
+
+enlaces.forEach(enlace => {
+
+    enlace.addEventListener("click", () => {
+
+        if (buscador) {
+            buscador.value = "";
+        }
+
+        if (catalogo) {
+
+            catalogo.querySelectorAll(".producto")
+                .forEach(tarjeta => {
+
+                    tarjeta.style.display = "";
+
+                });
+
+        }
+
+    });
+
 });
+
+
