@@ -53,7 +53,7 @@ const productos = [
         familia: "Dulce",
         precio: "$28.990",
         genero: "mujer",
-        imagen: "imagenes/ectasy.png",
+        imagen: "imagenes/Ectasy.png",
         agotado: false
     },
 
@@ -64,7 +64,7 @@ const productos = [
         familia: "Frutal",
         precio: "$28.990",
         genero: "mujer",
-        imagen: "imagenes/lady.png",
+        imagen: "imagenes/Lady.png",
         agotado: false
     },
 
@@ -75,7 +75,7 @@ const productos = [
         familia: "Dulce",
         precio: "$30.990",
         genero: "mujer",
-        imagen: "imagenes/nowWoman.png",
+        imagen: "imagenes/NowWoman.png",
         agotado: false
     },
 
@@ -86,7 +86,7 @@ const productos = [
         familia: "Fresco",
         precio: "$30.990",
         genero: "mujer",
-        imagen: "imagenes/yaramoi.png",
+        imagen: "imagenes/YaraMoi.png",
         agotado: false
     },
 
@@ -97,7 +97,7 @@ const productos = [
         familia:"Floral",
         precio: "$25.990",
         genero: "mujer",
-        imagen: "imagenes/qimmah.png",
+        imagen: "imagenes/Qimmah.png",
         agotado: false
     },
 
@@ -111,7 +111,7 @@ const productos = [
         familia:"Dulce",
         precio: "$35.990",
         genero: "mujer",
-        imagen: "imagenes/fakharmujer.png",
+        imagen: "imagenes/FakharMujer.png",
         agotado: false
     },
 
@@ -122,7 +122,7 @@ const productos = [
         familia: "Cítrico",
         precio: "$39.990",
         genero: "mujer",
-        imagen: "imagenes/tommygirl.png",
+        imagen: "imagenes/TommyGirl.png",
         agotado: false
     },
 
@@ -133,7 +133,7 @@ const productos = [
         familia:"Cítrico",
         precio: "$30.990",
         genero: "unisex",
-        imagen: "imagenes/opulent.png",
+        imagen: "imagenes/Opulent.png",
         agotado: false
     },
 
@@ -157,7 +157,7 @@ const productos = [
         familia: "Dulce",
         precio: "$32.990",
         genero: "hombre",
-        imagen: "imagenes/hayaatiroyale.png",
+        imagen: "imagenes/HayaatiRoyale.png",
         agotado: false
     },
 
@@ -168,7 +168,7 @@ const productos = [
         familia: "Dulce",
         precio: "$30.990",
         genero: "hombre",
-        imagen: "imagenes/mandarin.png",
+        imagen: "imagenes/Mandarin.png",
         agotado: false
     },
 
@@ -179,7 +179,7 @@ const productos = [
         familia: "Amaderado",
         precio: "$32.990",
         genero: "hombre",
-        imagen: "imagenes/asad.png",
+        imagen: "imagenes/Asad.png",
         agotado: true
     },
 
@@ -190,7 +190,7 @@ const productos = [
         familia:"Dulce",
         precio: "$30.990",
         genero: "hombre",
-        imagen: "imagenes/qaed.png",
+        imagen: "imagenes/Qaed.png",
         agotado: false
     },
 
@@ -201,7 +201,7 @@ const productos = [
         familia: "Dulce",
         precio: "$24.990",
         genero: "hombre",
-        imagen: "imagenes/proud.png",
+        imagen: "imagenes/Proud.png",
         agotado: false
     },
 
@@ -212,7 +212,7 @@ const productos = [
         familia: "Dulce",
         precio: "$25.990",
         genero: "hombre",
-        imagen: "imagenes/ramz.png",
+        imagen: "imagenes/Ramz.png",
         agotado: false
     },
 
@@ -223,7 +223,7 @@ const productos = [
         familia:"Amaderado",
         precio: "$35.990",
         genero: "hombre",
-        imagen: "imagenes/fakhar.png",
+        imagen: "imagenes/Fakhar.png",
         agotado: false
     },
 
@@ -471,4 +471,5 @@ const productos = [
     },
  
 ];
+
 
