@@ -43,7 +43,7 @@ const productos = [
         precioOferta: "$25.000",
         genero: "mujer",
         imagen: "imagenes/scarlet.png",
-        agotado: false
+        agotado: true
     }, 
 
     {
@@ -54,7 +54,7 @@ const productos = [
         precio: "$28.990",
         genero: "mujer",
         imagen: "imagenes/Ectasy.png",
-        agotado: false
+        agotado: true
     },
 
     {
@@ -65,7 +65,7 @@ const productos = [
         precio: "$28.990",
         genero: "mujer",
         imagen: "imagenes/Lady.png",
-        agotado: false
+        agotado: true
     },
 
     {
@@ -76,7 +76,7 @@ const productos = [
         precio: "$30.990",
         genero: "mujer",
         imagen: "imagenes/NowWoman.png",
-        agotado: false
+        agotado: true
     },
 
     {
@@ -98,7 +98,7 @@ const productos = [
         precio: "$25.990",
         genero: "mujer",
         imagen: "imagenes/Qimmah.png",
-        agotado: false
+        agotado: true
     },
 
 
@@ -112,7 +112,7 @@ const productos = [
         precio: "$35.990",
         genero: "mujer",
         imagen: "imagenes/FakharMujer.png",
-        agotado: false
+        agotado: true
     },
 
     {
@@ -134,7 +134,7 @@ const productos = [
         precio: "$30.990",
         genero: "unisex",
         imagen: "imagenes/Opulent.png",
-        agotado: false
+        agotado: true
     },
 
    
@@ -158,7 +158,7 @@ const productos = [
         precio: "$32.990",
         genero: "hombre",
         imagen: "imagenes/HayaatiRoyale.png",
-        agotado: false
+        agotado: true
     },
 
     {
@@ -169,7 +169,7 @@ const productos = [
         precio: "$30.990",
         genero: "hombre",
         imagen: "imagenes/Mandarin.png",
-        agotado: false
+        agotado: true
     },
 
     {
@@ -213,7 +213,7 @@ const productos = [
         precio: "$25.990",
         genero: "hombre",
         imagen: "imagenes/Ramz.png",
-        agotado: false
+        agotado: true
     },
 
     {
